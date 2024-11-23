@@ -1,6 +1,9 @@
-<html><head><base target="_blank">
-
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Embed</title>
   <style>
     body, html, iframe {
       margin: 0;
@@ -8,6 +11,12 @@
       height: 100%;
       width: 100%;
       overflow: hidden;
+    }
+    /* Set iframe to fill the entire window */
+    iframe {
+      width: 100%;  /* Make the iframe take up full width */
+      height: 100vh;  /* Make the iframe take up full height of the viewport */
+      border: none;  /* Remove the border */
     }
     .forceIosScrolling {
       overflow: scroll;
@@ -20,19 +29,15 @@
   </iframe>
 
   <script>
-    // Remap 'M' key to 'Space' for the embedded game
     window.addEventListener('keydown', function(event) {
       const iframe = document.getElementById('innerFrame');
       if (iframe && iframe.contentWindow) {
-        // Check if the pressed key is 'M'
         if (event.key === 'm' || event.key === 'M') {
-          // Prevent default 'M' key behavior
           event.preventDefault();
-          // Dispatch a 'Space' keydown event to the iframe
           const spaceEvent = new KeyboardEvent('keydown', {
             key: ' ',
             code: 'Space',
-            keyCode: 32, // Space key code
+            keyCode: 32,
             which: 32,
             bubbles: true
           });
@@ -41,7 +46,5 @@
       }
     });
   </script>
-
-
 </body>
 </html>
