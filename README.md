@@ -16,11 +16,12 @@
       background-color: #f0f0f0;  /* Optional: sets background color */
     }
 
-    /* Set iframe to a 16:9 aspect ratio */
+    /* Set iframe to a 16:9 aspect ratio, but scaled 5 times larger */
     iframe {
-      width: 80%;  /* 80% of the screen width */
-      max-width: 1280px;  /* Optional: limits the width to 1280px */
-      height: 45%;  /* 45% of the screen height, or you can adjust as needed */
+      width: 90%;  /* 90% of the screen width */
+      height: 50%;  /* 50% of the screen height */
+      max-width: 1280px;  /* Limits maximum width */
+      max-height: 720px;  /* Limits maximum height */
       border: none;
     }
   </style>
