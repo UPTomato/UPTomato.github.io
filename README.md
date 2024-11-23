@@ -19,7 +19,7 @@
     /* Set iframe to a 16:9 aspect ratio, but scaled 5 times larger */
     iframe {
       width: 90%;  /* 90% of the screen width */
-      height: 50%;  /* 50% of the screen height */
+      height: 80%;  /* 50% of the screen height */
       max-width: 1280px;  /* Limits maximum width */
       max-height: 720px;  /* Limits maximum height */
       border: none;
@@ -50,3 +50,4 @@
   </script>
 </body>
 </html>
+
