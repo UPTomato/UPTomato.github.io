@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game Embed</title>
   <style>
-    body, html, iframe {
+    body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      overflow: hidden;
+      display: flex;
+      justify-content: center;  /* Centers iframe horizontally */
+      align-items: center;  /* Centers iframe vertically */
+      background-color: #f0f0f0;  /* Optional: sets background color */
     }
-    /* Set iframe to fill the entire window */
+
+    /* Set iframe to a 16:9 aspect ratio */
     iframe {
-      width: 100%;  /* Make the iframe take up full width */
-      height: 100vh;  /* Make the iframe take up full height of the viewport */
-      border: none;  /* Remove the border */
-    }
-    .forceIosScrolling {
-      overflow: scroll;
-      -webkit-overflow-scrolling: touch;
+      width: 80%;  /* 80% of the screen width */
+      max-width: 1280px;  /* Optional: limits the width to 1280px */
+      height: 45%;  /* 45% of the screen height, or you can adjust as needed */
+      border: none;
     }
   </style>
 </head>
