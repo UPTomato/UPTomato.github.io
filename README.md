@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
@@ -82,7 +81,7 @@
         <button id="gamesButton">Barry 63's Games</button>
     </a>
 
-    <h1>Press this button to go straight to the fullscreen web app</h1>
+    <h2>Press this button to go straight to the fullscreen web app</h2>
     <a href="https://retrobowlbarry63sgames.w3spaces.com" target="_blank">
         <button id="fullscreenButton">Fullscreen Web App</button>
     </a>
